@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <title>Зворотний зв'язок</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="page" id="top">
+
+    <header class="header">
+        <h1 class="header__title">Мій сайт</h1>
+        <nav class="nav">
+            <ul class="nav__list">
+                <li class="nav__item"><a href="index.html" class="nav__link">Головна</a></li>
+                <li class="nav__item"><a href="about.html" class="nav__link">Інформація</a></li>
+                <li class="nav__item"><a href="contacts.html" class="nav__link">Зворотний зв'язок</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="section">
+            <h2 class="section__title">Контактна інформація</h2>
+            <article class="article">
+                <p>Якщо у вас виникли запитання, ви можете зв'язатися зі мною через офіційні канали зв'язку:</p>
+            </article>
+        </section>
+
+        <section class="section">
+            <h3 class="section__title">Напишіть мені</h3>
+            
+            <form action="#" method="post" class="contact-form">
+                
+                <label class="contact-form__label">
+                    Дата запиту: 
+                    <input type="datetime-local" class="contact-form__input" required>
+                </label>
+
+                <label class="contact-form__label">
+                    Ваш Email: 
+                    <input type="email" class="contact-form__input">
+                </label>
+
+                <label class="contact-form__label">
+                    Ваш телефон: 
+                    <input type="tel" class="contact-form__input" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}">
+                </label>
+
+                <label class="contact-form__label">
+                    Ваш сайт (URL): 
+                    <input type="url" class="contact-form__input">
+                </label>
+
+                <button type="submit" class="contact-form__button">Відправити дані</button>
+            </form>
+        </section>
+    </main>
+    <a href="#top" class="back-to-top">На початок</a>
+    <script src="script.js"></script>
+</body>
+</html>
